@@ -6,6 +6,16 @@ export interface DotenvParseOptions {
    * You may turn on logging to help debug why certain keys or values are not being set as you expect.
    */
   debug?: boolean;
+
+  /**
+   * Use `line-breaks` to allow multi-line variables with line breaks. Example:
+   * MY_VAR="this
+   * is
+   * a
+   * multiline
+   * string"
+   */
+  multiline?: 'line-breaks' | 'default';
 }
 
 export interface DotenvParseOutput {
@@ -44,6 +54,15 @@ export interface DotenvConfigOptions {
    * Override existing environment variable values, by default it's false
    */
   override?: boolean;
+  /**
+   * Use `line-breaks` to allow multi-line variables with line breaks. Example:
+   * MY_VAR="this
+   * is
+   * a
+   * multiline
+   * string"
+   */
+  multiline?: 'line-breaks' | 'default';
 }
 
 export interface DotenvConfigOutput {
