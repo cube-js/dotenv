@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/motdotla/dotenv.git"
+    "url": "git://github.com/cube-js/dotenv.git"
   },
   "keywords": [
     "dotenv",
