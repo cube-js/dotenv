@@ -39,6 +39,11 @@ export interface DotenvConfigOptions {
    * You may turn on logging to help debug why certain keys or values are not being set as you expect.
    */
   debug?: boolean;
+
+  /**
+   * Override existing environment variable values, by default it's false
+   */
+  override?: boolean;
 }
 
 export interface DotenvConfigOutput {
