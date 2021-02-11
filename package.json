@@ -1,5 +1,5 @@
 {
-  "name": "cubejs-dotenv",
+  "name": "@cubejs-backend/dotenv",
   "version": "8.3.0",
   "description": "Loads environment variables from .env file",
   "main": "lib/main.js",
