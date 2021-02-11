@@ -1,8 +1,10 @@
-name: Build
+name: Release
 
 on:
-  - push
-  - pull_request
+  push:
+    tags:
+      - 'v*.*.*'
+      - 'v*.*.*-*'
 
 jobs:
   npm:
@@ -20,5 +22,9 @@ jobs:
         uses: borales/actions-yarn@v2.3.0
         with:
           cmd: install --frozen-lockfile
-      - name: Tests
-        run: npm run test
+      - name: Set NPM token
+        run: echo //registry.npmjs.org/:_authToken=$NPM_TOKEN > ~/.npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: NPM publish
+        run: npm publish
