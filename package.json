@@ -47,5 +47,8 @@
     "ignore": [
       "flow-typed/"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
