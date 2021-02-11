@@ -31,7 +31,7 @@
   "license": "BSD-2-Clause",
   "devDependencies": {
     "decache": "^4.5.1",
-    "dtslint": "^0.9.8",
+    "dtslint": "^3.6.7",
     "flow-bin": "^0.109.0",
     "sinon": "^7.5.0",
     "standard": "^13.1.0",
