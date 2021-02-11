@@ -1,4 +1,4 @@
-import * as dotenv from "dotenv";
+import * as dotenv from "@cubejs-backend/dotenv";
 
 const { config, parse }: dotenv.DotEnv = {
   config: dotenv.config,
